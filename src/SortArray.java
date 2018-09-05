@@ -4,18 +4,18 @@ public class SortArray {
 
     private static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args){
+    /*public static void main(String[] args){
 
         int[] myIntegers = getIntegers(10);
-        /*for (int i = 0; i < myIntegers.length; i++){
+        for (int i = 0; i < myIntegers.length; i++){
             System.out.println("Element " + i + " typed value was " + myIntegers[i]);
-        }*/
+        }
         printArray(myIntegers);
         int[] sorted = selectionSort(myIntegers);
         printArray(sorted);
         printArray(myIntegers);
 
-    }
+    }*/
 
     private static int[] selectionSort(int[] array) {
 

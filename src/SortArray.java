@@ -4,18 +4,30 @@ public class SortArray {
 
     private static Scanner scanner = new Scanner(System.in);
 
-    /*public static void main(String[] args){
+    public static void main(String[] args){
 
         int[] myIntegers = getIntegers(10);
-        for (int i = 0; i < myIntegers.length; i++){
-            System.out.println("Element " + i + " typed value was " + myIntegers[i]);
-        }
+      
         printArray(myIntegers);
         int[] sorted = selectionSort(myIntegers);
         printArray(sorted);
         printArray(myIntegers);
+        reverse(myIntegers);
+        printArray(myIntegers);
 
-    }*/
+    }
+    
+    public static void reverse(int[] array) {
+
+        int j = array.length-1;
+        for(int i = 0; i < array.length/2; i++){
+            int t = array[i];
+            array[i] = array[j];
+            array[j] = t;
+            j--;
+        }
+
+    }
 
     private static int[] selectionSort(int[] array) {
 
